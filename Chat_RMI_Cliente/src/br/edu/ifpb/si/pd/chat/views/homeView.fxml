@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="274.0" prefWidth="500.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifpb.si.pd.chat.views.HomeViewController">
+   <children>
+      <Pane layoutX="15.0" layoutY="14.0" prefHeight="272.0" prefWidth="470.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <TextArea fx:id="textoTextArea" layoutX="9.0" layoutY="224.0" prefHeight="37.0" prefWidth="297.0" />
+            <ListView fx:id="mensagemListView" layoutX="9.0" layoutY="1.0" prefHeight="221.0" prefWidth="354.0" />
+            <Button layoutX="397.0" layoutY="224.0" mnemonicParsing="false" onAction="#bye" prefHeight="37.0" prefWidth="73.0" text="Sair" />
+            <Button layoutX="308.0" layoutY="224.0" mnemonicParsing="false" onAction="#enviar" prefHeight="37.0" prefWidth="87.0" text="Enviar" />
+            <TitledPane layoutX="365.0" prefHeight="187.0" prefWidth="105.0" text="Online">
+               <content>
+                  <ListView fx:id="usuarioListView" prefHeight="200.0" prefWidth="94.0" />
+               </content>
+            </TitledPane>
+            <Button layoutX="365.0" layoutY="189.0" mnemonicParsing="false" onAction="#atualizarListaUsuarios" prefHeight="33.0" prefWidth="105.0" text="Atualizar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
